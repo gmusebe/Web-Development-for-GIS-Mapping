@@ -35,3 +35,8 @@ button {
 .parent_container {
   width: 50%;
 }
+
+.main_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
