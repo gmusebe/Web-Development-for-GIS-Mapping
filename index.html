@@ -59,4 +59,49 @@
       </div>
     </div>
   </body>
+  <script>
+    // Testing the console
+    // Learning how to use the console
+    // Basic syntax
+    console.log("Hello DataCodes!");
+
+    // A sample function...
+    // function pickARandonWord() {
+    //   let randomNumber = Math.random();
+    //   console.log(randomNumber);
+    //   if (randomNumber < 0.5) {
+    //     let firstWord = "Word1";
+    //     return firstWord;
+    //   }
+    //   if (randomNumber >= 0.5 && randomNumber < 0.75) {
+    //     return "Word2";
+    //   }
+    //   if (randomNumber >= 0.75) {
+    //     return "Word3";
+    //   }
+    // }
+
+    // const randomWord = pickARandonWord();
+    // console.log(randomWord);
+
+    // Arrays
+    function pickARandonWordFromArray() {
+      let randomWords = ["Word1", "Word2", "Word3"]
+      let randomNumber = Math.random();
+      console.log(randomNumber);
+      if (randomNumber < 0.5) {
+        return randomWords[0];
+      }
+      if (randomNumber >= 0.5 && randomNumber < 0.75) {
+        return randomWords[1];
+      }
+      if (randomNumber >= 0.75) {
+        return randomWords[2];
+      }
+    }
+
+    const randomWord = pickARandonWordFromArray();
+    console.log(randomWord);
+
+  </script>
 </html>
