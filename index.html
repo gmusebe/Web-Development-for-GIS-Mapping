@@ -85,22 +85,45 @@
     // console.log(randomWord);
 
     // Arrays
-    function pickARandonWordFromArray() {
-      let randomWords = ["Word1", "Word2", "Word3"]
+    // function pickARandonWordFromArray() {
+    //   let randomWords = ["Word1", "Word2", "Word3"]
+    //   let randomNumber = Math.random();
+    //   console.log(randomNumber);
+    //   if (randomNumber < 0.5) {
+    //     return randomWords[0];
+    //   }
+    //   if (randomNumber >= 0.5 && randomNumber < 0.75) {
+    //     return randomWords[1];
+    //   }
+    //   if (randomNumber >= 0.75) {
+    //     return randomWords[2];
+    //   }
+    // }
+
+    // const randomWord = pickARandonWordFromArray();
+    // console.log(randomWord);
+
+    // Objects
+    function pickARandomWordFromObject() {
+      let randomWords = {
+        firstWord: "Word1",
+        secondWord: "Word2",
+        thirdWord: "Word3"
+      }
       let randomNumber = Math.random();
       console.log(randomNumber);
       if (randomNumber < 0.5) {
-        return randomWords[0];
+        return randomWords.firstWord;
       }
       if (randomNumber >= 0.5 && randomNumber < 0.75) {
-        return randomWords[1];
+        return randomWords.secondWord;
       }
       if (randomNumber >= 0.75) {
-        return randomWords[2];
+        return randomWords.thirdWord;
       }
     }
 
-    const randomWord = pickARandonWordFromArray();
+    const randomWord = pickARandomWordFromObject();
     console.log(randomWord);
 
   </script>
