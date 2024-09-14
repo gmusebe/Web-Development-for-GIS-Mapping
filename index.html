@@ -104,26 +104,49 @@
     // console.log(randomWord);
 
     // Objects
-    function pickARandomWordFromObject() {
+    // function pickARandomWordFromObject() {
+    //   let randomWords = {
+    //     firstWord: "Word1",
+    //     secondWord: "Word2",
+    //     thirdWord: "Word3"
+    //   }
+    //   let randomNumber = Math.random();
+    //   console.log(randomNumber);
+    //   if (randomNumber < 0.5) {
+    //     return randomWords.firstWord;
+    //   }
+    //   if (randomNumber >= 0.5 && randomNumber < 0.75) {
+    //     return randomWords.secondWord;
+    //   }
+    //   if (randomNumber >= 0.75) {
+    //     return randomWords.thirdWord;
+    //   }
+    // }
+
+
+    // Passing a variable.
+    // A variable has "scope"
+    function pickARandomWordFromPassedVariable(sampleNumber) {
       let randomWords = {
         firstWord: "Word1",
         secondWord: "Word2",
         thirdWord: "Word3"
       }
-      let randomNumber = Math.random();
-      console.log(randomNumber);
-      if (randomNumber < 0.5) {
+      console.log(sampleNumber);
+      if (sampleNumber < 0.5) {
         return randomWords.firstWord;
       }
-      if (randomNumber >= 0.5 && randomNumber < 0.75) {
+      if (sampleNumber >= 0.5 && sampleNumber < 0.75) {
         return randomWords.secondWord;
       }
-      if (randomNumber >= 0.75) {
+      if (sampleNumber >= 0.75) {
         return randomWords.thirdWord;
       }
     }
 
-    const randomWord = pickARandomWordFromObject();
+    let randomNumber = Math.random();
+    console.log(randomNumber);
+    const randomWord = pickARandomWordFromPassedVariable(randomNumber);
     console.log(randomWord);
 
   </script>
