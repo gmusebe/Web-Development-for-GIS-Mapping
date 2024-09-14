@@ -42,7 +42,7 @@ button {
   width: 60px;
 }
 /* class */
-.equals_button {
+#equals_button {
   background: green;
 }
 /* id */

@@ -51,7 +51,7 @@
               <button>/</button>
             </div>
             <div>
-              <button class="equals_button">=</button>
+              <button id="equals_button">=</button>
               <button id="c_id_button">C</button>
             </div>
           </div>
@@ -60,10 +60,19 @@
     </div>
   </body>
   <script>
+    console.log();
+    document
+      .getElementById("equals_button")
+      .addEventListener("click", function() {
+        console.log("Clicked")
+    });
+
+    document
+      .getElementById("text_input").value = "Hello"
+
     // Testing the console
     // Learning how to use the console
     // Basic syntax
-    console.log("Hello DataCodes!");
 
     // A sample function...
     // function pickARandonWord() {
@@ -126,28 +135,28 @@
 
     // Passing a variable.
     // A variable has "scope"
-    function pickARandomWordFromPassedVariable(sampleNumber) {
-      let randomWords = {
-        firstWord: "Word1",
-        secondWord: "Word2",
-        thirdWord: "Word3"
-      }
-      console.log(sampleNumber);
-      if (sampleNumber < 0.5) {
-        return randomWords.firstWord;
-      }
-      if (sampleNumber >= 0.5 && sampleNumber < 0.75) {
-        return randomWords.secondWord;
-      }
-      if (sampleNumber >= 0.75) {
-        return randomWords.thirdWord;
-      }
-    }
+    // function pickARandomWordFromPassedVariable(sampleNumber) {
+    //   let randomWords = {
+    //     firstWord: "Word1",
+    //     secondWord: "Word2",
+    //     thirdWord: "Word3"
+    //   }
+    //   console.log(sampleNumber);
+    //   if (sampleNumber < 0.5) {
+    //     return randomWords.firstWord;
+    //   }
+    //   if (sampleNumber >= 0.5 && sampleNumber < 0.75) {
+    //     return randomWords.secondWord;
+    //   }
+    //   if (sampleNumber >= 0.75) {
+    //     return randomWords.thirdWord;
+    //   }
+    // }
 
-    let randomNumber = Math.random();
-    console.log(randomNumber);
-    const randomWord = pickARandomWordFromPassedVariable(randomNumber);
-    console.log(randomWord);
+    // let randomNumber = Math.random();
+    // console.log(randomNumber);
+    // const randomWord = pickARandomWordFromPassedVariable(randomNumber);
+    // console.log(randomWord);
 
   </script>
 </html>
